@@ -1,0 +1,45 @@
+header {
+    background: url("../images/Deathling/z-smith-sketch-5.jpg");
+    background-position: center;
+    padding-top: 5rem;
+}
+
+.bubble-container {
+    background-image: url("../images/Deathling/vulkan.jpg");
+}
+
+.person-info {
+    background: url("../images/Deathling/scales.jpg");
+    padding-bottom: 0;
+}
+
+.character-info img {
+    margin-left: 28rem;
+    margin-top: 2rem;   
+}
+
+.photogallery {
+    background: url("../images/Deathling/lava-art.jpg");
+    background-size: cover;
+}
+
+@media screen and (max-width: 320px) {
+
+    header {
+        padding-top: 0;
+    }
+
+    .bubbles-section,
+    .character-info {
+        display: none;
+    }
+
+    .person-info {
+        padding-bottom: 5rem;
+    }
+
+    .person-text q {
+        font-size: 1.5rem;
+    }
+    
+}

@@ -1,0 +1,57 @@
+.video-background {
+    position: absolute;
+    width: 100%;
+}
+
+.video-background video {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translate(0,-80%);
+}
+
+header {
+    background: none;
+    position: relative;
+}
+
+.about-person {
+    background: url("../images/Torty/1920x1200-3084255-background-image_caribbean_greeting-card_holiday_sand_travel.jpg");
+    background-size: cover;
+    padding: 5rem 0;
+}
+
+.person-info {
+    background: url("../images/page-backgroundETC/sand-background.jpg");
+}
+
+.tottle {
+    margin: auto;
+}
+
+.tottle img {
+    width: 20rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+
+.tottle figcaption {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+}
+
+.photogallery {
+    background: url("../images/Torty/wallpapersden.com_palms-tropics-trees_3840x2400.jpg");
+    background-size: cover;
+}
+
+@media screen and (max-width: 320px) {
+
+    .video-background video {
+        transform: translate(0,1%);
+      }
+    
+}

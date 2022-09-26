@@ -1,0 +1,232 @@
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background: url("../images/Gnome/magic-circle.jpg") top right no-repeat !important;
+    background-color: black !important;
+}
+
+.animated-header h1 {
+    color: rgb(71, 74, 249);
+    display: inline-block;
+    font-size: 5rem;
+    padding-top: 5rem;
+    text-shadow: 1px 1px 50px rgb(51, 0, 255);
+    margin: 0;
+}
+
+.animated-header span:nth-child(1) {
+    animation: turn 1s ease-in;
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 3rem;
+}
+
+.animated-header span:nth-child(2) {
+    animation: turn3 3.5s ease-in;
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 3rem;
+}
+
+.animated-header span:nth-child(3) {
+    animation: turn 2s ease-in;
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 3rem;
+}
+
+.animated-header span:nth-child(4) {
+    animation: turn4 2.5s ease-in;
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 3rem;
+}
+
+.animated-header span:nth-child(5) {
+    animation: turn2 3s ease-in;
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 3rem;
+}
+
+.animated-header span:nth-child(6) {
+    animation: turn5 3s ease-in;
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 3rem;
+}
+
+.animated-header span:nth-child(7) {
+    animation: turn6 4s ease-in;
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 3rem;
+}
+
+.animated-header span:nth-child(8) {
+    animation: turn7 4s ease-in;
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 3rem;
+}
+
+@keyframes turn {
+    0% {
+        transform:  translateY(-1000%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes turn2 {
+    0% {
+        transform:  translateY(-1000%);
+    }
+
+    50% {
+        transform:  translateY(150%);
+    }
+
+    55% {
+        transform:  translateY(-150%) rotateX(90deg);
+    }
+
+    65% {
+        transform:  translateY(-150%) rotateX(180deg);
+    }
+
+    75% {
+        transform: scaleY(0.5);
+    }
+
+    85% {
+        transform: scaleY(3);
+    }
+    
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes turn3 {
+    0% {
+        transform:  translateX(-1000%);
+    }
+
+    50% {
+        transform:  translateX(150%);
+    }
+
+    55% {
+        transform:  translateX(-150%) rotateX(90deg);
+    }
+
+    65% {
+        transform: scale(2) translateX(-150%) rotateY(180deg);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes turn4 {
+    0% {
+        transform:  translateY(1000%);
+    }
+
+    50% {
+        transform: scale(2) translateY(150%);
+    }
+
+    55% {
+        transform: scale(2) translateY(-150%) rotateY(90deg);
+    }
+
+    65% {
+        transform:  translateY(-150%) rotateX(180deg);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes turn5 {
+    0% {
+        transform:  translateX(1000%);
+    }
+
+    50% {
+        transform:  translateX(2150%);
+    }
+
+    55% {
+        transform:  translateY(1150%) rotateY(90deg);
+    }
+
+    65% {
+        transform: scale(2) translateX(-150%) rotateY(180deg);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes turn6 {
+    0% {
+        transform: translateY(-1000px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes turn7 {
+    0% {
+        transform: translateY(1000px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.about-person {
+    background: url("../images/Gnome/dalaran-back.jpg");
+    background-size: cover;
+    padding: 1rem 0;
+}
+
+.person-info {
+    background: url("../images/page-backgroundETC/ice-background.jpg");
+    padding-bottom: 0 !important;
+}
+
+.character-info {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.character-info img {
+    width: 20rem;
+}
+
+.photogallery {
+    background: url("../images/Gnome/dalaran.jpg");
+}

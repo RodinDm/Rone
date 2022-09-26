@@ -1,0 +1,48 @@
+.proudmoore > .container {
+    position: relative;
+}
+
+.proudmoore > a {
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/page-backgroundETC/sea.jpg");
+    background-size: cover;
+}
+  
+.background .water {
+    position: absolute;
+    background-image: url("../images/page-backgroundETC/sea-map.png");
+    background-size: cover;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    filter: url("#turbulence");
+}
+
+.person-info {
+    background: url("../images/page-backgroundETC/ice-background.jpg");
+}
+
+.person-photos {
+    background: url('../images/Jaina/Kul-Tiras.jpg');
+}
+
+.photogallery {
+    background-image: url("../images/Jaina/Kul-Tiras.jpg");
+}
+
+@media screen and (max-width: 320px) {
+
+    .logo {
+    margin-top: -10rem;
+    }
+
+}

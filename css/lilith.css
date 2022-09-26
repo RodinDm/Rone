@@ -1,0 +1,97 @@
+header {
+    background: black;
+}
+
+.logo {
+    display: none;
+}
+
+.animation-text {
+    width: 100%;
+    position: absolute;
+    color: azure;
+    margin: auto;
+    font-size: 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.animation-text span {
+    padding: 0 4rem;
+    opacity: 0;
+    transition: 1s;
+    animation: reveal 2.5s linear forwards;
+    filter: blur(1rem);
+}
+
+@keyframes reveal {
+    
+    10%  {
+        opacity: 0.5;
+        filter: blur(0.5rem);
+    }
+    
+    20% {
+        opacity: 1;
+        filter: blur(0.6rem);
+        color: red;
+    }
+
+    80% {
+        opacity: 1;
+        color: red;
+        filter: blur(0.1rem);
+    }
+
+    90% {
+        opacity: 0.8;
+        filter: blur(0.2rem);
+        text-shadow: 1px 1px 5px rgb(255, 24, 24);
+    }
+
+    100% {
+        opacity: 1;
+        color: red;
+        text-shadow: 4px 4px 50px rgb(253, 3, 3);
+        filter: blur(0);
+    }
+}
+
+.animation-text span:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.animation-text span:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.animation-text span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.animation-text span:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.animation-text span:nth-child(5) {
+    animation-delay: 1.4s;
+}
+
+.animation-text span:nth-child(6) {
+    animation-delay: 2.5s;
+}
+
+.about-person {
+    background: url("../images/Lilith/Holyknight3000V4.jpg");
+    padding: 1rem 0;
+}
+
+.person-info {
+    background: url("../images/Lilith/diablo-wallpaper-4k-scaled.jpg");
+}
+
+.photogallery {
+    background: url("../images/Lilith/maxresdefault.jpg");
+    background-size: cover;
+}

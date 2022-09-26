@@ -1,0 +1,41 @@
+header {
+    background: url("../images/page-backgroundETC/barrens2.jpg");
+}
+
+section.about-person {
+    background: url("../images/page-backgroundETC/desert.jpg");
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.person-info {
+    background-image: url("../images/page-backgroundETC/sand-background.jpg");
+}
+
+.person-info h1,
+.title-png {
+    color: #DD2727;
+    text-shadow: 2px 1px 1px black;
+}
+
+.character-info {
+    margin-left: 18rem;
+    margin-bottom: -5.2rem;
+}
+
+.photogallery {
+    padding-top: 4rem;
+    background-image: url("../images/page-backgroundETC/barrens.jpg");
+    background-repeat: round;
+}
+
+@media screen and (max-width: 320px) {
+    
+    .logo {
+        margin: 0;
+    }
+
+    .photogallery {
+        padding: 0;
+    }
+}

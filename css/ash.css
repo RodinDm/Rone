@@ -1,0 +1,166 @@
+.bubble-container {
+    background-image: url("../images/Deathling/vulkan.jpg");
+    background-repeat: round;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.bubble {
+    width: 3px;
+    height: 3px;
+    border: 1px solid rgb(170, 130, 130);
+    border-radius: 50%;
+    box-shadow: inset 1px -1px 5px rgb(69, 12, 12);
+    background-color: rgba(255, 255, 255, .01);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    bottom: 0;
+    animation: bub 3s ease-in infinite;
+}
+
+.bubble-small {
+    width: 2px;
+    height: 2px;
+    border: 1px solid rgb(238, 149, 149);
+    border-radius: 50%;
+    box-shadow: inset 1px -1px 15px rgb(48, 8, 8);
+    background-color: rgba(255, 255, 255, .01);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    bottom: 0;
+    animation: bub 3s ease-in infinite;
+}
+
+.bubble.bubble-1 {
+    left: 10%;
+    animation: bub3 5s ease-in 1.5s infinite;
+}
+
+.bubble.bubble-2 {
+    left: 23%;
+    animation: bub 6s ease-in 3.8s infinite;
+}
+
+.bubble.bubble-3 {
+    left: 31%;
+    animation: bub 4.5s ease-in 2s infinite;
+}
+
+.bubble.bubble-4 {
+    left: 42%;
+    animation: bub2 8s ease-in 3.1s infinite;
+}
+
+.bubble.bubble-5 {
+    left: 48%;
+    animation: bub 3s ease-in 4s infinite;
+}
+
+.bubble.bubble-6 {
+    left: 55%;
+    animation: bub 3s ease-in 2.5s infinite;
+}
+
+.bubble.bubble-7 {
+    left: 65%;
+    animation: bub3 5.5s ease-in 1s infinite;
+}
+
+.bubble.bubble-8 {
+    left: 73%;
+    animation: bub 5s ease-in 3s infinite;
+}
+
+.bubble.bubble-9 {
+    left: 18%;
+    animation: bub 2.2s ease-in 4.3s infinite;
+}
+
+.bubble.bubble-10 {
+    left: 42%;
+    animation: bub 3s ease-in 2.1s infinite;
+}
+
+.bubble.bubble-11 {
+    left: 28%;
+    animation: bub2 3s ease-in 1.5s infinite;
+}
+
+.bubble.bubble-12 {
+    left: 48%;
+    animation: bub3 3s ease-in 4s infinite;
+}
+
+.bubble.bubble-13 {
+    left: 31%;
+    animation: bub3 14.5s ease-in 2.2s infinite;
+}
+
+.bubble.bubble-14 {
+    left: 25%;
+    animation: bub3 3.5s ease-in 3.5s infinite;
+}
+
+.bubble.bubble-15 {
+    left: 5%;
+    animation: bub3 12s ease-in 1.5s infinite;
+}
+
+.bubble.bubble-16 {
+    left: 85%;
+    animation: bub 5s ease-in 4.5s infinite;
+}
+
+.bubble.bubble-17 {
+    left: 72%;
+    animation: bub2 3s ease-in 7s infinite;
+}
+
+@keyframes bub {
+    0% {
+        opacity: 0;
+    }
+    
+    10%,
+    93% {
+        opacity: 1;
+    }
+    
+    100% {
+        transform: translate(190px, -1700px);
+        display: none;
+    }
+}
+
+@keyframes bub2 {
+    0% {
+        opacity: 0;
+    }
+    
+    10%, 93% {
+        opacity: 1;
+    }
+    
+    100% {
+        transform: translate(1230px, -1750px);
+        display: none;
+    }
+}
+
+@keyframes bub3 {
+    0% {
+        opacity: 0;
+    }
+    
+    10%, 93% {
+        opacity: 1;
+    }
+    
+    100% {
+        transform: translate(-1250px, -1550px);
+        display: none;
+    }
+}

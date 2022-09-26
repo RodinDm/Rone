@@ -1,0 +1,182 @@
+.bubble-container {
+    background: url('../images/page-backgroundETC/barrens.jpg');
+    background-repeat: round;
+    width: 100%;
+    min-height: 100;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.bubble {
+    width: 1px;
+    height: 16px;
+    border: 1px solid rgb(10, 10, 197);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    top: 0;
+    animation: bub 3s ease-in infinite;
+}
+
+.bubble::before {
+    position: absolute;
+    content: "";
+    background-color: rgb(32, 134, 235);
+    box-shadow: 0px 0px 10px rgb(6, 6, 107);
+}
+
+.bubble-small {
+    width: 1px;
+    height: 12px;
+    box-shadow: inset 1px -1px 15px rgb(14, 32, 138);
+    background-color: rgba(61, 54, 238, 0.7);
+    backdrop-filter: blur(2px);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: absolute;
+    top: 0;
+    animation: bub 3s ease-in infinite;
+}
+
+.bubble~.bubble-small::before {
+    position: absolute;
+    content: "";
+    background-color: rgb(44, 110, 223);
+    box-shadow: 0px 0px 15px rgb(14, 61, 189);
+}
+
+
+.bubble.bubble-1 {
+    right: 91%;
+    animation: bub3 0.5s ease-in 1.5s infinite;
+}
+
+.bubble.bubble-2 {
+    right: 23%;
+    animation: bub 0.6s ease-in 1.8s infinite;
+}
+
+.bubble.bubble-3 {
+    right: 31%;
+    animation: bub 0.5s ease-in 2s infinite;
+}
+
+.bubble.bubble-4 {
+    right: 42%;
+    animation: bub2 0.8s ease-in 3.1s infinite;
+}
+
+.bubble.bubble-5 {
+    right: 48%;
+    animation: bub 0.2s ease-in 1.4s infinite;
+}
+
+.bubble.bubble-6 {
+    right: 55%;
+    animation: bub 0.3s ease-in 1.5s infinite;
+}
+
+.bubble.bubble-7 {
+    right: 95%;
+    animation: bub3 0.5s ease-in 1s infinite;
+}
+
+.bubble.bubble-8 {
+    right: 73%;
+    animation: bub 1s ease-in 1.3s infinite;
+}
+
+.bubble.bubble-9 {
+    right: 88%;
+    animation: bub 0.2s ease-in 1.3s infinite;
+}
+
+.bubble.bubble-10 {
+    right: 32%;
+    animation: bub 1s ease-in 2.1s infinite;
+}
+
+.bubble.bubble-11 {
+    right: 19%;
+    animation: bub2 1s ease-in 1.5s infinite;
+}
+
+.bubble.bubble-12 {
+    right: 28%;
+    animation: bub3 1s ease-in 2s infinite;
+}
+
+.bubble.bubble-13 {
+    right: 31%;
+    animation: bub3 0.3s ease-in 2.2s infinite;
+}
+
+.bubble.bubble-14 {
+    right: 25%;
+    animation: bub3 0.5s ease-in 1.5s infinite;
+}
+
+.bubble.bubble-15 {
+    right: 25%;
+    animation: bub3 0.2s ease-in 1.5s infinite;
+}
+
+.bubble.bubble-16 {
+    right: 35%;
+    animation: bub 1s ease-in 2.5s infinite;
+}
+
+.bubble.bubble-17 {
+    right: 72%;
+    animation: bub2 0.3s ease-in 2s infinite;
+}
+
+@keyframes bub {
+    0% {
+        opacity: 0;
+    }
+
+    10%,
+    93% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(120px, 2170px);
+        display: none;
+    }
+}
+
+@keyframes bub2 {
+    0% {
+        opacity: 0;
+    }
+
+    10%,
+    93% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(150px, 2150px);
+        display: none;
+    }
+}
+
+@keyframes bub3 {
+    0% {
+        opacity: 0;
+    }
+
+    10%,
+    93% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(150px, 2550px);
+        display: none;
+    }
+}

@@ -1,0 +1,60 @@
+.murloc-header {
+    background: none;
+}
+
+.video-background {
+    position: absolute;
+    width: 100%;
+}
+
+.video-background video {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translate(0,-30%);
+}
+
+.logo {
+    position: relative;
+    padding: 10rem;
+}
+
+.container {
+    position: relative;
+}
+
+.bubble-container {
+    background: url("../images/page-backgroundETC/murloc-warleader.jpg");
+    background-size: cover;
+}
+
+.character-info img {
+    width: 250px;
+    margin-left: 39rem;
+    margin-bottom: -6.1rem;
+}
+
+.person-info {
+    background: url("../images/page-backgroundETC/stone-background.jpg");
+}
+
+.photogallery {
+    background: url("../images/Murloc/sea-back.jpg");
+}
+
+@media screen and (max-width: 320px) {
+    
+    .logo {
+        padding: 1.2rem;
+    }
+
+    .video-background video {
+        top: 56px;
+    }
+
+    .clip {
+        display: none;
+    }
+}

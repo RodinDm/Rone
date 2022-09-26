@@ -1,0 +1,92 @@
+header.alien {
+    background-image: url("../images/Alien/stars_back.jpg");
+    background-size: cover;
+}
+
+.alien-header {
+    position: relative;
+    padding: 8rem;
+}
+
+.alien-header h1 {
+    color: #eef;
+    display: inline-block;
+    font-size: 5vw;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.aliens>* {
+    animation: turn 10s ease-in;
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 3vw;
+    text-shadow: 0 0 .5rem #def;
+    text-transform: uppercase;
+    transform: scaleY(4);
+}
+
+@keyframes turn {
+    0% {
+        text-shadow: 0 0 0 #def;
+        transform: scaleY(4) rotateY(90deg);
+    }
+
+    100% {
+        text-shadow: 0 0 .5rem #def;
+        transform: scaleY(4) rotateY(0);
+    }
+}
+
+.about-person {
+    background: url("../images/Alien/alien-back.jpg");
+    background-repeat: round;
+    padding: 1rem;
+}
+
+.person-info {
+    background: url("../images/Alien/alien-card2.jpg");
+    margin: 5rem auto;
+    background-size: cover;
+}
+
+.character-info {
+    margin-left: 41rem;
+    margin-bottom: -5.2rem;
+}
+
+.about-alien .person-info a {
+    text-shadow: 2px 2px 3px rgb(183, 181, 168);
+    color: white;
+    border: 18px groove rgb(167, 171, 191);
+    background: linear-gradient(180deg, #b1b1d7, #0f1011, #27275b);
+}
+
+.photogallery {
+    background: url("../images/Alien/alien-back2.jpg") !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .alien-header {
+        padding: 0;
+    }
+
+    .alien-header h1 {
+        margin-top: 3rem;
+    }
+
+    .about-alien .person-info a {
+        border: 4px groove rgb(167, 171, 191);;
+    }
+
+    .alien-title img {
+        width: 80%;
+    }
+}

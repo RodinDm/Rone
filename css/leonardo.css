@@ -1,0 +1,51 @@
+header {
+    background: url("../images/Leonardo/TMNT_logo2.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    padding-top: 15rem;
+    margin-top: -5rem;
+}
+
+.about-person {
+    background: url("../images/Leonardo/1612691525_15-p-zelenii-fon-cherepashki-nindzya-16.jpg");
+    background-size: contain;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-y: center;
+    padding: 5rem 0;
+}
+
+.person-info {
+    background: url("../images/Leonardo/turtle-shell-pattern-vector-22.png");
+    margin: 0 auto;
+    padding-bottom: 0;
+}
+
+.person-info a {
+    color: white;
+    background: linear-gradient(180deg, #b1b1d7, #2c00ff, #27275b);
+    padding: 1rem;
+    border: none;
+}
+
+.photogallery {
+    background: url("../images/Leonardo/sewers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+
+@media screen and (max-width: 320px) {
+    
+    header {
+    padding-top: 0;
+    margin-top: 0;
+    background-size: contain;
+    }
+
+    .person-info {
+        padding-bottom: 5rem;
+    }
+}

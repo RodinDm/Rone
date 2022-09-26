@@ -1,0 +1,498 @@
+body {
+    margin: 0;
+    background: #f2f2f2;
+    overflow-x: hidden;
+}
+
+
+header {
+    background: url('../images/page-backgroundETC/instruments.jpg') left top no-repeat,
+    url('../images/page-backgroundETC/clay.jpg') 90% top no-repeat;
+    background-size: contain;
+    background-color: white;
+    text-align: center;
+}
+
+.container {
+    background: linear-gradient(50deg, #797979, black 83%, #757070);
+}
+
+header a {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    transition: .3s ease-in-out;
+}
+
+.logo {
+    color: #D5B45B;
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5em;
+    padding: 56px 0;
+    text-shadow: 1px 4px 1px #282803;
+}
+
+nav {
+    display: table;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topmenu {
+    display: flex;
+}
+
+.topmenu>li {
+    width: 25%;
+    position: relative;
+    font-family: 'Exo 2', sans-serif;
+    ;
+}
+
+.topmenu>li>a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    padding: 15px 30px;
+}
+
+.topmenu li a:hover {
+    color: #D5B45B;
+}
+
+.submenu-link:after {
+
+    font-family: "FontAwesome";
+    color: inherit;
+    margin-left: 10px;
+}
+
+.submenu {
+    background: linear-gradient(50deg, #797979, black 83%, #757070);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    width: 180px;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+}
+
+.submenu a {
+    color: white;
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.submenu li:last-child a {
+    border-bottom: none;
+}
+
+.topmenu>li:hover .submenu {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.to-the-top {
+    position: fixed;
+    background-color: #757070;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 1;
+}
+
+.to-the-top a {
+    text-decoration: none;
+    color: white;
+}
+
+#author-section {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+
+.section-header h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+}
+
+.author-info {
+    display: inline-block;
+}
+
+.author-info p {
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.author-info a {
+    text-decoration: none;
+    color: blue;
+}
+
+.author-info span {
+    color: blue;
+}
+
+.author-info a:hover,
+.author-info span:hover {
+    color: red;
+}
+
+.author-info ul {
+    text-align: center;
+    list-style: none;
+}
+
+.author-info li {
+    padding: 0.5rem 0;
+}
+
+.ava {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.portfolio-section {
+    background-color: white;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    padding: 0;
+    font-size: 3rem;
+    color: #D5B45B;
+    font-weight: 700;
+    font-family: 'Yeseva One', cursive;
+    text-shadow: 2px 2px 3px black;
+}
+
+.portfolio-section img {
+    width: 90%;
+}
+
+.portfolio-section.header {
+    background: linear-gradient(50deg, #797979, black 83%, #757070);
+}
+
+.person-photos-header {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #D5B45B;
+    font-family: 'Yeseva One', cursive;
+    background: linear-gradient(300deg, #757070, black 83%, #797979);
+    text-shadow: 1px 4px 1px #282803;
+}
+
+.person-info {
+    width: 50%;
+    text-align: center;
+    margin: 6rem auto;
+    padding-bottom: 5rem;
+    border-radius: 40px;
+    border: 2px solid black;
+}
+
+.person-info h1 {
+    font-size: 3rem;
+    color: #D5B45B;
+    font-weight: 700;
+    font-family: 'Yeseva One', cursive;
+    text-shadow: 2px 2px 3px black;
+}
+
+.person-photos-header h2 {
+    margin: 0;
+    padding: 0.7rem;
+}
+
+.person-photos-header p {
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.person-image img {
+    width: 80%;
+    border-radius: 20px;
+    border: 1px solid aliceblue;
+}
+
+.person-text {
+    padding-bottom: 1rem;
+    margin: 1.5rem 3rem;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+}
+
+.person-text q {
+    font-style: italic;
+    ;
+    font-family: 'Caveat', cursive;
+    font-size: 2.2rem;
+}
+
+.person-text p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.person-info a {
+    text-decoration: none;
+    text-shadow: 2px 2px 3px rgb(138, 119, 9);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: gold;
+    border: 3px groove rgb(202, 175, 19);
+    border-radius: 4px;
+    background: linear-gradient(180deg, #b1b1d7, blue, #27275b);
+    padding: 1rem;
+}
+
+.person-info a:hover {
+    background: linear-gradient(180deg, #ead0d0, red, #4c2020);
+    text-shadow: 3px 3px 2px rgb(16, 16, 16);
+    color: white;
+}
+
+.title-png {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+    color: #D5B45B;
+    font-family: 'Yeseva One', cursive;
+    text-shadow: 3px 3px 3px black;
+}
+
+.title-png h3 {
+    font-size: 2rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.title-png p {
+    font-size: 1.5rem;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.title-png img {
+    width: 200px;
+}
+
+
+.clip {
+    position: relative;
+    background: white;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    background: white;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    height: 72px;
+    width: 147px;
+    left: 572px;
+    top: 142px;
+}
+
+.clip p {
+    padding-top: 12px;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+}
+
+
+.photogallery {
+    padding-top: 4rem;
+    background-repeat: round;
+}
+
+.figure-photo {
+    float: left;
+    width: 20%;
+    filter: grayscale(1);
+}
+
+.figure-photo:hover {
+    filter: grayscale(0);
+}
+
+.footer-col {
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem 28rem;
+    font-size: 1.2rem;
+    background: linear-gradient(300deg, #757070, black 83%, #797979);
+    color: white;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: white;
+}
+
+.company-name {
+    margin-top: 1.5rem;
+}
+
+.social {
+    padding-top: 0.7rem;
+}
+
+.email-phone {
+    display: grid;
+}
+
+.footer-col img {
+    padding: 0.3rem;
+}
+
+.footer-col span {
+    padding: 0.3rem;
+}
+
+@media screen and (max-width: 320px) {
+
+    header {
+        background: url('../images/page-backgroundETC/instruments.jpg');
+        background-position-x: -8rem;
+        padding: 0;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+    
+    .topmenu {
+        flex-direction: column;
+    }
+
+    .topmenu li {
+        width: 100%;
+    }
+
+    .topmenu li + li {
+        border-top: 1px solid white;
+    }
+
+    .to-the-top {
+        display: none;
+    }
+
+    #author-section {
+        width: 95%;
+        padding: 0 0.5rem;
+    }
+
+    .author-info ul {
+        padding: 0;
+    }
+
+    .bubbles-section {
+        display: none;
+    }
+
+    .section-header h1 {
+        font-size: 2rem;
+    }
+
+    .person-info {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .person-info h1 {
+        font-size: 2rem;
+    }
+
+    .title-png {
+        display: block;
+    }
+
+    .title-png img {
+        width: 150px;
+    }
+
+    .title-png h3 {
+        font-size: 1.5rem;
+    }
+
+    .title-png p {
+        font-size: 1.2rem;
+    }
+
+    .about-person {
+        padding: 0 !important;
+    }
+
+    .person-image img {
+        width: 100%;
+        border-radius: 0;
+        border: none;
+    }
+
+    .person-text {
+        padding: 0 1rem 0.5rem;
+        margin: 0;
+    }
+
+    .person-info p {
+        text-align: center;
+    }
+
+    .person-info a {
+        font-size: 0.56rem;
+        padding: 1rem 0.1rem;
+    }
+
+    .character-info {
+        display: none;
+    }
+
+    .photogallery {
+        padding: 0;
+    }
+
+    .carousel {
+        width: 100% !important;
+    }
+
+    .figure-photo {
+        width: 100%;
+    }
+
+    .footer-col {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .footer-col span {
+        padding: 0;
+    }
+
+    .social {
+        padding: 0;
+    }
+}    
